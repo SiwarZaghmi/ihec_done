@@ -6,7 +6,7 @@ var logger = require('morgan');
 const cors = require ('cors');
 const summaryRouter = require('./routes/summary');
 const roastRouter = require('./routes/roast');
-
+require('dotenv').config();
 var app = express();
 app.use(cors());
 // view engine setup
